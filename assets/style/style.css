@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* hero section */
+
+.hero-section{
+    background-image: url("../images/slide01.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.nav-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 5%;
+}
+
+.logo{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.logo span{
+    font-weight: 500;
+}
+
+.menu-options{
+    color: #ffffff;
+    width: 100px;
+}
+
+.hero-content{
+    height:80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.content p{
+    font-weight: 100;
+    margin-bottom: 5%;
+}
+
+.content hr{
+    margin: auto;
+    width: 70%;
+}
+
+.content h1{
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 5%;
+}
+
+
+/* blog section */
+
+.blog-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 15%;
+    background-color: #F5F5F5;
+}
+
+.blog{
+    width:45%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.blog img{
+    width: 100%;
+}
+
+.blog-content{
+    text-align: center;
+    padding: 5%;
+}
+
+.blog-content h3{
+    font-size: 20px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    font-weight: 400;
+}
+
+.blog-content hr{
+    margin: auto;
+    width: 70%;
+}
+
+.blog-content p{
+    font-weight: 300;
+    margin: 2% auto;
+    text-align: left;
+}
+
+.blog-content .tag{
+    text-align: center;
+    margin-top: 0%;
+}
+
+.learn-more{
+    padding: 2% 4%;
+    margin-top: 5%;
+    background-color: #ffffff;
+    border: 1px solid black;
+}
+
+.call-to-action{
+    background-image: url("../images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.cta-content{
+    text-align: center;
+}
+
+.cta-content p{
+    font-weight: 100;
+    margin-bottom: 3%;
+}
+
+.cta-content h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 3%;
+}
+
+.cta-content hr{
+    margin: auto;
+    width: 400px;
+}
+
+
+
+/* image section */
+
+.image-section{
+    text-align: center;
+    padding: 5% 15%;
+}
+
+.image-content p{
+    font-weight: 100;
+    margin-bottom: 1%;
+}
+
+.image-content h3{
+    font-weight: 500;
+    margin-top: 1%;
+}
+
+.image-content hr{
+    margin: auto;
+    width:40%;
+}
+
+.image-gallery{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.image-gallery img{
+    width: 450px;
+    margin: 3% auto;
+}
+
+/* footer section */
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: #ffffff;
+    height: 30vh;
+}
+
+.social-icons{
+    margin-bottom: 1%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social-icons a{
+    text-decoration: none;
+    color: grey;
+    font-size: 25px;
+
+}
+
+.social-icons a:hover{
+    color: #ffffff;
+}
+
+
+
+
+
+/* mobile */
+@media only screen and (max-width:800px){
+
+    /* hero section */
+
+    .nav-section{
+        align-items: center;
+        justify-content: space-between;
+        padding: 2% 5%;
+    }
+
+    .menu-options{
+        text-align: right;
+    }
+
+    .logo{
+        padding-left: 0%;
+        font-size: 20px;
+    }
+
+    .content{
+        margin:auto;
+    }
+
+
+    /* blog section */
+
+    .blog-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #F5F5F5;
+    }
+
+    .blog{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+    
+
+    /* cta section */
+
+    .cta-content{
+        padding:0%;
+        width:70%;
+        margin: auto;
+    }
+
+    .cta-content hr{
+        width:50%
+    }
+
+    /* image section */
+
+    .image-section{
+        padding: 5% 0%;
+    }
+
+    .image-content p{
+        padding: 4% 10%
+    }
+
+    .image-content h3{
+        padding: 4% 10%;
+    }
+
+    .image-gallery{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .image-gallery img{
+        width: 300px;
+        margin: 3% auto;
+        
+    }
+
+    /* footer section */
+
+    .social-icons{
+        width:70%;
+        margin-bottom: 5%;
+    }
+}
+
+
+/* tablet */
+@media only screen and (max-width:1200px) and (min-width:799px){
+
+
+    /* hero section */
+
+    .nav-section{
+        padding: 5% auto;
+    }
+
+    .logo{
+        font-size: 30px;
+    }
+
+    .menu-options{
+        font-size: 25px;
+    }
+
+    .content h1{
+        font-size: 110px;
+    }
+
+    .content p{
+        font-size: 30px;
+    }
+
+    /* blog section */
+
+    .blog-section{
+        padding: 5% 2%;
+    }
+
+    .blog{
+        width: 370px;
+    }
+
+    .blog-content p{
+        font-size: 25px;
+        margin-bottom: 10%;
+    }
+
+    .blog-content h3{
+        font-size: 30px;
+        margin-top: 10%;
+        font-weight: 600;
+    }
+
+
+    /* call to action section */
+
+    .cta-content p{
+        font-size: 25px;
+        padding: 0% 2%;
+    }
+
+    .cta-content h3{
+        font-size: 30px;
+    }
+
+
+    /* image section */
+
+    .image-content p{
+        font-size: 25px;
+        margin-bottom: 5%;
+    }
+
+    .image-content hr{
+        width: 70%;
+    }
+
+    .image-content h3{
+        font-size: 30px;
+        margin: 5% auto;
+    }
+
+    .image-content h3{
+        font-size: 30px;
+    }
+
+    .image-gallery img{
+        width: 300px;
+        margin: 3% 3%;
+    }
+
+
+    /* footer section */
+
+    .footer-section{
+        font-size: 30px;
+    }
+
+    .social-icons{
+        width:70%;
+        margin-bottom: 5%;
+    }
+
+    .social-icons a{
+        font-size: 50px;
+
+    }
+    
+}
